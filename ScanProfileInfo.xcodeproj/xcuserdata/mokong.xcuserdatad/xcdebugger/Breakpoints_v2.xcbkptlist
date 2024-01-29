@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "6202DA42-A547-4882-9D8E-327104C56B37"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.SwiftErrorBreakpoint">
+         <BreakpointContent
+            uuid = "07F8B44F-67B2-4DF9-873A-EDBE0AA1AC73"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            uuid = "6DC97271-33A9-433F-A970-93F1150E2501"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            breakpointStackSelectionBehavior = "1"
+            scope = "1"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8D8F2256-5D7E-4DD9-BE3B-F2DA3DFDC66C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ScanProfileInfo/Util/DLMFileUtil.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "readFileTargetContent(fileURL:startStr:endStr:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EBE3E05D-F441-4D2C-965A-C46E370EF730"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ScanProfileInfo/Model/DLMProfileItem.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "profileItem(from:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "EBE3E05D-F441-4D2C-965A-C46E370EF730 - 5c4e5300523f09ec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static ScanProfileInfo.DLMProfileItem.profileItem(from: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; ScanProfileInfo.DLMProfileItem"
+                  moduleName = "ScanProfileInfo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mokong/Desktop/Github/ScanProfileInfo/ScanProfileInfo/Model/DLMProfileItem.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "3929">
+               </Location>
+               <Location
+                  uuid = "EBE3E05D-F441-4D2C-965A-C46E370EF730 - 5c4e5300523f0a22"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static ScanProfileInfo.DLMProfileItem.profileItem(from: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; ScanProfileInfo.DLMProfileItem"
+                  moduleName = "ScanProfileInfo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mokong/Desktop/Github/ScanProfileInfo/ScanProfileInfo/Model/DLMProfileItem.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "3929">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F900D7C9-AB9C-45AA-AF1B-E1700D747832"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ScanProfileInfo/Util/DLMEventUtil.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "createCalendarEvent(with:notes:startDate:endDate:alarmDate:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F900D7C9-AB9C-45AA-AF1B-E1700D747832 - 3bdbb06d9372394b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in ScanProfileInfo.DLMEventUtil.createCalendarEvent(with: Swift.String, notes: Swift.String, startDate: Foundation.Date, endDate: Foundation.Date, alarmDate: Foundation.Date) -&gt; ()"
+                  moduleName = "ScanProfileInfo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mokong/Desktop/Github/ScanProfileInfo/ScanProfileInfo/Util/DLMEventUtil.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "1619">
+               </Location>
+               <Location
+                  uuid = "F900D7C9-AB9C-45AA-AF1B-E1700D747832 - 3bdbb06d9372396a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in ScanProfileInfo.DLMEventUtil.createCalendarEvent(with: Swift.String, notes: Swift.String, startDate: Foundation.Date, endDate: Foundation.Date, alarmDate: Foundation.Date) -&gt; ()"
+                  moduleName = "ScanProfileInfo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mokong/Desktop/Github/ScanProfileInfo/ScanProfileInfo/Util/DLMEventUtil.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "1619">
+               </Location>
+               <Location
+                  uuid = "F900D7C9-AB9C-45AA-AF1B-E1700D747832 - 3bdbb06d9372396a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in ScanProfileInfo.DLMEventUtil.createCalendarEvent(with: Swift.String, notes: Swift.String, startDate: Foundation.Date, endDate: Foundation.Date, alarmDate: Foundation.Date) -&gt; ()"
+                  moduleName = "ScanProfileInfo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mokong/Desktop/Github/ScanProfileInfo/ScanProfileInfo/Util/DLMEventUtil.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "1596">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C0AC78DB-7D71-446B-8BAF-37DA9AEE816E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ScanProfileInfo/Util/DLMEventUtil.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "createCalendarEvent(with:notes:startDate:endDate:alarmDate:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D1E02F8C-AD20-42CE-9347-3AE21AD46A6A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ScanProfileInfo/Util/DLMEventUtil.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "createCalendarEvent(with:notes:startDate:endDate:alarmDate:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D1E02F8C-AD20-42CE-9347-3AE21AD46A6A - 3bdbb06d93723fdc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in ScanProfileInfo.DLMEventUtil.createCalendarEvent(with: Swift.String, notes: Swift.String, startDate: Foundation.Date, endDate: Foundation.Date, alarmDate: Foundation.Date) -&gt; ()"
+                  moduleName = "ScanProfileInfo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mokong/Desktop/Github/ScanProfileInfo/ScanProfileInfo/Util/DLMEventUtil.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "1962">
+               </Location>
+               <Location
+                  uuid = "D1E02F8C-AD20-42CE-9347-3AE21AD46A6A - 3bdbb06d93723fdc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in ScanProfileInfo.DLMEventUtil.createCalendarEvent(with: Swift.String, notes: Swift.String, startDate: Foundation.Date, endDate: Foundation.Date, alarmDate: Foundation.Date) -&gt; ()"
+                  moduleName = "ScanProfileInfo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mokong/Desktop/Github/ScanProfileInfo/ScanProfileInfo/Util/DLMEventUtil.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "1942">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

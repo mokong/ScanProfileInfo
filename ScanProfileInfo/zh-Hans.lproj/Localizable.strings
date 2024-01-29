@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  ScanProfileInfo
+
+  Created by mokong on 2024/1/18.
+  
+*/
+"chooseProvisioningProfiles" = "选择 Provisioning Profiles 目录";
+"expired" = "已过期";
+"expiredToday" = "一天内过期";
+"expiresIn1Week" = "一周内过期";
+"expiresIn2Week" = "两周内过期";
+"expiresInMonth" = "一个月内过期";
+"expiresInDate" = "%ld个月内过期";
+"refresh" = "刷新";
+"delete" = "删除";
+"addAlert" = "添加提醒";
+"settings" = "设置";

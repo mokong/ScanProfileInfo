@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  ScanProfileInfo
+
+  Created by mokong on 2024/1/18.
+  
+*/
+"chooseProvisioningProfiles" = "Select the Provisioning Profiles directory";
+"expired" = "Already Expired";
+"expiredToday" = "Expires In 1 day";
+"expiresIn1Week" = "Expires In 1 week";
+"expiresIn2Week" = "Expires In 2 week";
+"expiresInMonth" = "Expires In 1 month";
+"expiresInDate" = "Expires In %ld month";
+"refresh" = "Refresh";
+"delete" = "Delete";
+"addAlert" = "Set Reminder";
+"settings" = "Settings";
