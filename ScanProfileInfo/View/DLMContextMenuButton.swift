@@ -13,7 +13,7 @@ struct DLMRevealButton: View {
     
     var body: some View {
         Button(action: reveal) {
-            Text("RevealInFinder")
+            Text("Show In Finder")
         }
         .help("RevealInFinder")
     }
@@ -86,7 +86,7 @@ struct DLMAddAlertButton: View {
     
     var body: some View {
         Button(action: addAlert) {
-            Text("AddAlert")
+            Text("Add Alert")
         }
         .help("AddAlert")
     }

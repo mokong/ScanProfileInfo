@@ -36,7 +36,7 @@ struct DLMListItemRowView: View {
                 Button {
                     showInFinderAction()
                 } label: {
-                    Label("ShowInFiner", systemImage: "folder").labelStyle(.titleAndIcon)
+                    Label("ShowInFinder", systemImage: "folder").labelStyle(.titleAndIcon)
                 }
                 
                 if listItem.endDateType() != .expired {
