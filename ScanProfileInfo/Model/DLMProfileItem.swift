@@ -20,7 +20,16 @@ enum DLMProfileRightBtnType {
     case addAlert
 }
 
-struct DLMProfileItem: Codable, Hashable {
+enum DLMProfileAlertState: Int {
+    case added
+    case notAdded
+    case delete
+}
+
+struct DLMProfileItem: Codable, Hashable, Identifiable {
+    var id: String {
+        return uuid.wrapNil
+    }
     var creationDate: Date?
     var teamName: String?
     var name: String?
@@ -39,9 +48,10 @@ struct DLMProfileItem: Codable, Hashable {
     var provisionedDevices: [String]?
     var provisionsAllDevices: Bool?
     var applicationGroups: [String]?
-        
+    var selected: Bool
+
     static func profileItem(from infoDic: [String: Any]) -> DLMProfileItem {
-        var product: DLMProfileItem = DLMProfileItem()
+        var product: DLMProfileItem = DLMProfileItem(selected: false)
         product.creationDate = infoDic["CreationDate"] as? Date
         product.teamName = infoDic["TeamName"] as? String
         product.name = infoDic["Name"] as? String
@@ -90,6 +100,15 @@ struct DLMProfileItem: Codable, Hashable {
             return .aboutToExprire
         } else {
             return .normal
+        }
+    }
+    
+    func alertState() -> DLMProfileAlertState {
+        let timeInterval = endTimeInterval()
+        if timeInterval < 0 {
+            return .delete
+        } else {
+            return .notAdded
         }
     }
     

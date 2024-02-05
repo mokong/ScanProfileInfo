@@ -9,10 +9,14 @@ import SwiftUI
 
 @main
 struct ScanProfileInfoApp: App {
+    @StateObject private var appState = AppState()
+
     var body: some Scene {
         WindowGroup {
-            DLMMainView()
+//            DLMMainView()
 //            DLMMainSplitView()
+            DLMainWindow()
+                .environmentObject(appState)
         }
     }
 }

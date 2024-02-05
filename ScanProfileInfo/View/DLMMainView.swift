@@ -45,9 +45,6 @@ struct DLMMainView: View {
                     listView()
                 }
                 
-                Text("selectedItems: \(vm.selectedItems.count)")
-                    .font(.title3)
-                
                 DLMMainFooterView {
                     vm.updateProfileItemList()
                 } settingsAction: {
@@ -76,11 +73,14 @@ struct DLMMainView: View {
 //                }
 //               
                 Menu(content: {
-                    Picker("Destination", selection: $vm.showStyle) {
-                        Text("list")
-                        Text("grid")
-                        
-                    }.pickerStyle(.menu)
+                    Text("list")
+                    Text("grid")
+
+//                    Picker("Destination", selection: $vm.showStyle) {
+//                        Text("list")
+//                        Text("grid")
+//                        
+//                    }.pickerStyle(.menu)
                     
                 },
                                  label: { Label ("Destination", systemImage: "text.justify") })

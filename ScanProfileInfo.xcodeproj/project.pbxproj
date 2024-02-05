@@ -11,7 +11,6 @@
 		3E09DDF22B58AFBB00522DFB /* Optional_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E09DDF12B58AFBB00522DFB /* Optional_Extensions.swift */; };
 		3E09DDF52B58C60A00522DFB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3E09DDF72B58C60A00522DFB /* Localizable.strings */; };
 		3E09DDFA2B58C9A400522DFB /* String_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E09DDF92B58C9A400522DFB /* String_Extensions.swift */; };
-		3E09DDFC2B58CC9C00522DFB /* DLMEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E09DDFB2B58CC9C00522DFB /* DLMEmptyView.swift */; };
 		3E09DDFE2B58CCAD00522DFB /* DLMMainFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E09DDFD2B58CCAD00522DFB /* DLMMainFooterView.swift */; };
 		3E09DE002B58CD1100522DFB /* DLMDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E09DDFF2B58CD1100522DFB /* DLMDetailView.swift */; };
 		3E09DE022B590DF800522DFB /* DLMProfileDetailColumnItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E09DE012B590DF800522DFB /* DLMProfileDetailColumnItem.swift */; };
@@ -25,6 +24,20 @@
 		3E3A14C72B5134780086CC8F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E3A14C62B5134780086CC8F /* Preview Assets.xcassets */; };
 		3E3A14D32B513A100086CC8F /* DLMScanVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A14D22B513A100086CC8F /* DLMScanVM.swift */; };
 		3E3A14D52B513ECB0086CC8F /* DLMFileUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A14D42B513ECB0086CC8F /* DLMFileUtil.swift */; };
+		3E919B3E2B6F7DD30024E74A /* DLMainWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E919B3D2B6F7DD30024E74A /* DLMainWindow.swift */; };
+		3E919B412B6F7E130024E74A /* NavigationSplitViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E919B402B6F7E130024E74A /* NavigationSplitViewWrapper.swift */; };
+		3E919B432B6F860D0024E74A /* MainToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E919B422B6F860D0024E74A /* MainToolbar.swift */; };
+		3E919B452B6F86F90024E74A /* ProgressButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E919B442B6F86F90024E74A /* ProgressButton.swift */; };
+		3E919B472B6F87B10024E74A /* View+IsHidden.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E919B462B6F87B10024E74A /* View+IsHidden.swift */; };
+		3E919B492B6F88510024E74A /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E919B482B6F88510024E74A /* AppState.swift */; };
+		3E919B4B2B6F8B3C0024E74A /* FilterListCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E919B4A2B6F8B3C0024E74A /* FilterListCategory.swift */; };
+		3E919B572B7082640024E74A /* DLMProfileListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E919B562B7082640024E74A /* DLMProfileListView.swift */; };
+		3E919B592B70B6030024E74A /* DLMProfileListItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E919B582B70B6030024E74A /* DLMProfileListItemRow.swift */; };
+		3E919B5B2B70B6CF0024E74A /* DLMContextMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E919B5A2B70B6CF0024E74A /* DLMContextMenuButton.swift */; };
+		3E919B5D2B70C2CC0024E74A /* DLMAppStoreButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E919B5C2B70C2CC0024E74A /* DLMAppStoreButtonStyle.swift */; };
+		3E919B5F2B70CC2B0024E74A /* DLMUnselectedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E919B5E2B70CC2B0024E74A /* DLMUnselectedView.swift */; };
+		3E919B612B70DD660024E74A /* FocusedValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E919B602B70DD660024E74A /* FocusedValues.swift */; };
+		3E919B632B70DDEA0024E74A /* SelectedProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E919B622B70DDEA0024E74A /* SelectedProfile.swift */; };
 		3EB1EA142B5A12A7007386FF /* DLMListItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB1EA132B5A12A7007386FF /* DLMListItemRowView.swift */; };
 		3EB1EA162B5A14ED007386FF /* URL_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB1EA152B5A14ED007386FF /* URL_Extensions.swift */; };
 		3EB1EA182B5A1EAE007386FF /* DLMEventUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB1EA172B5A1EAE007386FF /* DLMEventUtil.swift */; };
@@ -36,7 +49,6 @@
 		3E09DDF62B58C60A00522DFB /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		3E09DDF82B58C60E00522DFB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3E09DDF92B58C9A400522DFB /* String_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String_Extensions.swift; sourceTree = "<group>"; };
-		3E09DDFB2B58CC9C00522DFB /* DLMEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLMEmptyView.swift; sourceTree = "<group>"; };
 		3E09DDFD2B58CCAD00522DFB /* DLMMainFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLMMainFooterView.swift; sourceTree = "<group>"; };
 		3E09DDFF2B58CD1100522DFB /* DLMDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLMDetailView.swift; sourceTree = "<group>"; };
 		3E09DE012B590DF800522DFB /* DLMProfileDetailColumnItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLMProfileDetailColumnItem.swift; sourceTree = "<group>"; };
@@ -52,6 +64,20 @@
 		3E3A14C82B5134780086CC8F /* ScanProfileInfo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScanProfileInfo.entitlements; sourceTree = "<group>"; };
 		3E3A14D22B513A100086CC8F /* DLMScanVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLMScanVM.swift; sourceTree = "<group>"; };
 		3E3A14D42B513ECB0086CC8F /* DLMFileUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLMFileUtil.swift; sourceTree = "<group>"; };
+		3E919B3D2B6F7DD30024E74A /* DLMainWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLMainWindow.swift; sourceTree = "<group>"; };
+		3E919B402B6F7E130024E74A /* NavigationSplitViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationSplitViewWrapper.swift; sourceTree = "<group>"; };
+		3E919B422B6F860D0024E74A /* MainToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainToolbar.swift; sourceTree = "<group>"; };
+		3E919B442B6F86F90024E74A /* ProgressButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressButton.swift; sourceTree = "<group>"; };
+		3E919B462B6F87B10024E74A /* View+IsHidden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+IsHidden.swift"; sourceTree = "<group>"; };
+		3E919B482B6F88510024E74A /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		3E919B4A2B6F8B3C0024E74A /* FilterListCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterListCategory.swift; sourceTree = "<group>"; };
+		3E919B562B7082640024E74A /* DLMProfileListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLMProfileListView.swift; sourceTree = "<group>"; };
+		3E919B582B70B6030024E74A /* DLMProfileListItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLMProfileListItemRow.swift; sourceTree = "<group>"; };
+		3E919B5A2B70B6CF0024E74A /* DLMContextMenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLMContextMenuButton.swift; sourceTree = "<group>"; };
+		3E919B5C2B70C2CC0024E74A /* DLMAppStoreButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLMAppStoreButtonStyle.swift; sourceTree = "<group>"; };
+		3E919B5E2B70CC2B0024E74A /* DLMUnselectedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLMUnselectedView.swift; sourceTree = "<group>"; };
+		3E919B602B70DD660024E74A /* FocusedValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusedValues.swift; sourceTree = "<group>"; };
+		3E919B622B70DDEA0024E74A /* SelectedProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedProfile.swift; sourceTree = "<group>"; };
 		3EB1EA132B5A12A7007386FF /* DLMListItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLMListItemRowView.swift; sourceTree = "<group>"; };
 		3EB1EA152B5A14ED007386FF /* URL_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL_Extensions.swift; sourceTree = "<group>"; };
 		3EB1EA172B5A1EAE007386FF /* DLMEventUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLMEventUtil.swift; sourceTree = "<group>"; };
@@ -77,6 +103,7 @@
 				3E09DDF92B58C9A400522DFB /* String_Extensions.swift */,
 				3E09DE052B590F8B00522DFB /* Date_Extensions.swift */,
 				3EB1EA152B5A14ED007386FF /* URL_Extensions.swift */,
+				3E919B422B6F860D0024E74A /* MainToolbar.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -100,6 +127,7 @@
 		3E3A14BE2B5134750086CC8F /* ScanProfileInfo */ = {
 			isa = PBXGroup;
 			children = (
+				3E919B3F2B6F7DE90024E74A /* Common */,
 				3EB1EA192B5A480F007386FF /* Info.plist */,
 				3E09DDEC2B57D05900522DFB /* Extension */,
 				3E3A14D12B5135680086CC8F /* View */,
@@ -137,6 +165,8 @@
 				3E09DDEA2B57C99000522DFB /* DLMProfileItem.swift */,
 				3E09DE012B590DF800522DFB /* DLMProfileDetailColumnItem.swift */,
 				3E09DE032B590E9E00522DFB /* DLMProfileDetailItem.swift */,
+				3E919B4A2B6F8B3C0024E74A /* FilterListCategory.swift */,
+				3E919B622B70DDEA0024E74A /* SelectedProfile.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -146,6 +176,8 @@
 			children = (
 				3E3A14D42B513ECB0086CC8F /* DLMFileUtil.swift */,
 				3EB1EA172B5A1EAE007386FF /* DLMEventUtil.swift */,
+				3E919B482B6F88510024E74A /* AppState.swift */,
+				3E919B602B70DD660024E74A /* FocusedValues.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -154,13 +186,28 @@
 			isa = PBXGroup;
 			children = (
 				3E3A14C12B5134750086CC8F /* DLMMainView.swift */,
-				3E09DDFB2B58CC9C00522DFB /* DLMEmptyView.swift */,
 				3E09DDFD2B58CCAD00522DFB /* DLMMainFooterView.swift */,
 				3E09DDFF2B58CD1100522DFB /* DLMDetailView.swift */,
 				3E09DE092B5922E100522DFB /* DLMMainSplitView.swift */,
 				3EB1EA132B5A12A7007386FF /* DLMListItemRowView.swift */,
+				3E919B3D2B6F7DD30024E74A /* DLMainWindow.swift */,
+				3E919B462B6F87B10024E74A /* View+IsHidden.swift */,
+				3E919B562B7082640024E74A /* DLMProfileListView.swift */,
+				3E919B582B70B6030024E74A /* DLMProfileListItemRow.swift */,
+				3E919B5A2B70B6CF0024E74A /* DLMContextMenuButton.swift */,
+				3E919B5C2B70C2CC0024E74A /* DLMAppStoreButtonStyle.swift */,
+				3E919B5E2B70CC2B0024E74A /* DLMUnselectedView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		3E919B3F2B6F7DE90024E74A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3E919B402B6F7E130024E74A /* NavigationSplitViewWrapper.swift */,
+				3E919B442B6F86F90024E74A /* ProgressButton.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,22 +284,35 @@
 			files = (
 				3E3A14D32B513A100086CC8F /* DLMScanVM.swift in Sources */,
 				3E09DDFA2B58C9A400522DFB /* String_Extensions.swift in Sources */,
+				3E919B472B6F87B10024E74A /* View+IsHidden.swift in Sources */,
+				3E919B612B70DD660024E74A /* FocusedValues.swift in Sources */,
+				3E919B592B70B6030024E74A /* DLMProfileListItemRow.swift in Sources */,
 				3E09DE082B59105400522DFB /* DateFormatter+Extensions.swift in Sources */,
+				3E919B412B6F7E130024E74A /* NavigationSplitViewWrapper.swift in Sources */,
 				3E09DDF22B58AFBB00522DFB /* Optional_Extensions.swift in Sources */,
+				3E919B5D2B70C2CC0024E74A /* DLMAppStoreButtonStyle.swift in Sources */,
 				3E3A14C22B5134750086CC8F /* DLMMainView.swift in Sources */,
 				3E09DE002B58CD1100522DFB /* DLMDetailView.swift in Sources */,
 				3E09DE022B590DF800522DFB /* DLMProfileDetailColumnItem.swift in Sources */,
 				3E3A14C02B5134750086CC8F /* ScanProfileInfoApp.swift in Sources */,
 				3E09DDFE2B58CCAD00522DFB /* DLMMainFooterView.swift in Sources */,
+				3E919B4B2B6F8B3C0024E74A /* FilterListCategory.swift in Sources */,
 				3E09DE042B590E9E00522DFB /* DLMProfileDetailItem.swift in Sources */,
-				3E09DDFC2B58CC9C00522DFB /* DLMEmptyView.swift in Sources */,
+				3E919B5F2B70CC2B0024E74A /* DLMUnselectedView.swift in Sources */,
 				3E09DE0A2B5922E100522DFB /* DLMMainSplitView.swift in Sources */,
+				3E919B432B6F860D0024E74A /* MainToolbar.swift in Sources */,
 				3E09DDEB2B57C99100522DFB /* DLMProfileItem.swift in Sources */,
 				3E09DE062B590F8B00522DFB /* Date_Extensions.swift in Sources */,
+				3E919B452B6F86F90024E74A /* ProgressButton.swift in Sources */,
+				3E919B492B6F88510024E74A /* AppState.swift in Sources */,
 				3EB1EA142B5A12A7007386FF /* DLMListItemRowView.swift in Sources */,
 				3E3A14D52B513ECB0086CC8F /* DLMFileUtil.swift in Sources */,
+				3E919B632B70DDEA0024E74A /* SelectedProfile.swift in Sources */,
+				3E919B5B2B70B6CF0024E74A /* DLMContextMenuButton.swift in Sources */,
 				3EB1EA182B5A1EAE007386FF /* DLMEventUtil.swift in Sources */,
+				3E919B3E2B6F7DD30024E74A /* DLMainWindow.swift in Sources */,
 				3EB1EA162B5A14ED007386FF /* URL_Extensions.swift in Sources */,
+				3E919B572B7082640024E74A /* DLMProfileListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
