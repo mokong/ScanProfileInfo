@@ -10,6 +10,7 @@ import SwiftUI
 struct MainToolbarModifier: ViewModifier {
     @EnvironmentObject var appState: AppState
     @Binding var filterType: FilterListCategory
+    @Binding var isFilterRepeat: Bool
     
     func body(content: Content) -> some View {
         content
@@ -39,6 +40,16 @@ struct MainToolbarModifier: ViewModifier {
                     .labelStyle(TitleAndIconLabelStyle())
                     .foregroundColor(Color.red)
             }
+            .help("picker item by date")
+            
+            Button {
+                isFilterRepeat.toggle()
+            } label: {
+                Label("Repeat", systemImage: isFilterRepeat ? "repeat.circle.fill" : "repeat.circle")
+                    .labelStyle(TitleAndIconLabelStyle())
+                    .foregroundColor(Color.accentColor)
+            }
+            .help("FilterRepeat")
             
 //            Button {
 //                switch filterType {
@@ -61,9 +72,9 @@ struct MainToolbarModifier: ViewModifier {
 }
 
 extension View {
-    func mainToolbar(filterType: Binding<FilterListCategory>) -> some View {
+    func mainToolbar(filterType: Binding<FilterListCategory>, isFilterRepeat: Binding<Bool>) -> some View {
         self.modifier(
-            MainToolbarModifier(filterType: filterType)
+            MainToolbarModifier(filterType: filterType, isFilterRepeat: isFilterRepeat)
         )
     }
 }

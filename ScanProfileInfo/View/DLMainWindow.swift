@@ -11,6 +11,7 @@ struct DLMainWindow: View {
     @EnvironmentObject var appState: AppState
     @State private var selectedProfileUUID: String?
     @AppStorage("filterListCategory") private var filterType: FilterListCategory = .all
+    @AppStorage("isFilterRepeat") private var isFilterRepeat: Bool = false
     
     private var profile: DLMProfileItem? {
         appState.allProfileList.first(where: { $0.uuid == selectedProfileUUID })
@@ -18,10 +19,11 @@ struct DLMainWindow: View {
 
     var body: some View {
         NavigationSplitViewWrapper {
-            DLMProfileListView(selectedProfileUUID: $selectedProfileUUID, filterType: filterType)
+            DLMProfileListView(selectedProfileUUID: $selectedProfileUUID, filterType: filterType, isFilterRepeat: isFilterRepeat)
                 .frame(minWidth: 250)
                 .layoutPriority(1)
-                .mainToolbar(filterType: $filterType)
+                .mainToolbar(filterType: $filterType,
+                             isFilterRepeat: $isFilterRepeat)
         } detail: {
             Group {
                 if let profile = profile {
