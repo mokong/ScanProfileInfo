@@ -78,6 +78,15 @@ extension AppState {
         updateAllProfileList()
     }
     
+    func deleteAllExpiredProfile() {
+        let expiredProfileList = allProfileList.filter { $0.endDateType() == .expired }
+        expiredProfileList.forEach { profile in
+            guard let fileURL = fileURL(with: profile) else { return }
+            fileUtil.removeFile(at: fileURL)
+        }
+        updateAllProfileList()
+    }
+    
     func addAlert(_ profile: DLMProfileItem) {
         let type = profile.endDateType()
         guard type != .expired else {

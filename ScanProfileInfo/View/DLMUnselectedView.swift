@@ -21,6 +21,13 @@ struct DLMUnselectedView: View {
                 .font(.title)
                 .foregroundColor(.secondary)
             Spacer()
+            
+            if !appState.allProfileList.isEmpty {
+                Button("删除所有过期描述文件") {
+                    appState.deleteAllExpiredProfile()
+                }
+            }
+            
         }
     }
 }
