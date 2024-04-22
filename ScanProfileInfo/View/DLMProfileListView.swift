@@ -42,6 +42,7 @@ struct DLMProfileListView: View {
             }
             profileList = tempList
         }
+        profileList.sort(by: { ($0.expirationDate ?? Date()).compare(($1.expirationDate ?? Date())) == .orderedAscending })
         return profileList
     }
     

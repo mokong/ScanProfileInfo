@@ -13,8 +13,6 @@ struct ScanProfileInfoApp: App {
 
     var body: some Scene {
         WindowGroup {
-//            DLMMainView()
-//            DLMMainSplitView()
             DLMainWindow()
                 .environmentObject(appState)
         }
