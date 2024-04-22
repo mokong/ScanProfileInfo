@@ -29,20 +29,37 @@ struct DLMProfileListView: View {
         case .expired:
             profileList = appState.allProfileList.filter { $0.endDateType() == .expired }
         }
+        // 忽略掉 Xcode 管理的 profile
+        profileList = profileList.filter { $0.isXcodeManaged != 1 }
         if isFilterRepeat {
-            let crossReference = Dictionary(grouping: profileList, by: \.applicationIdentifier)
-            let duplicates = crossReference
-                .filter { $1.count > 1 }
-                .compactMap { $0.1 }
-            var tempList: [DLMProfileItem] = []
-            duplicates.forEach { list in
-                list.forEach { item in
-                    tempList.append(item)
+            // 根据 applicationIdentifier和 apsEnvironment， 查找 profileList 中重复的 profile
+            // Fixed-Me: 如果 profile 中读取不到 apns-environment，会导致被错认为重复的 profile
+            var profileDict = [String: [DLMProfileItem]]()
+            var duplicates: [DLMProfileItem] = []
+            for profile in profileList {
+                let applicationIdentifier = profile.applicationIdentifier.wrapNil
+                let environment = profile.apsEnvironment.wrapNil
+                let specialID = applicationIdentifier + environment
+                if var items = profileDict[specialID] {
+                    items.append(profile)
+                    profileDict[specialID] = items
+                } else {
+                    profileDict[specialID] = [profile]
                 }
             }
-            profileList = tempList
+            
+            for (_, items) in profileDict {
+                if items.count > 1 {
+                    duplicates.append(contentsOf: items)
+                }
+            }
+            
+            profileList = duplicates
+            
+            profileList.sort(by: { $0.applicationIdentifier.wrapNil.compare($1.applicationIdentifier.wrapNil) == .orderedAscending })
+        } else {
+            profileList.sort(by: { ($0.expirationDate ?? Date()).compare(($1.expirationDate ?? Date())) == .orderedAscending })
         }
-        profileList.sort(by: { ($0.expirationDate ?? Date()).compare(($1.expirationDate ?? Date())) == .orderedAscending })
         return profileList
     }
     

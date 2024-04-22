@@ -47,26 +47,9 @@ struct MainToolbarModifier: ViewModifier {
             } label: {
                 Label("Repeat", systemImage: isFilterRepeat ? "repeat.circle.fill" : "repeat.circle")
                     .labelStyle(TitleAndIconLabelStyle())
-                    .foregroundColor(Color.accentColor)
+                    .foregroundColor(isFilterRepeat ? Color.accentColor : Color.gray)
             }
             .help("FilterRepeat")
-            
-//            Button {
-//                switch filterType {
-//                case .all:
-//                    filterType = .aboutToExpire
-//                case .aboutToExpire:
-//                    filterType = .expired
-//                case .expired:
-//                    filterType = .all
-//                }
-//            } label: {
-//                Label(filterType.rawValue, systemImage: "line.horizontal.3.decrease.circle.fill")
-//                    .labelStyle(TitleAndIconLabelStyle())
-//                    .foregroundColor(Color.accentColor)
-//            }
-//            .help("FilterAvailableDescription")
-
         }
     }
 }
