@@ -1,6 +1,6 @@
 背景
 
-之前有写过使用[Python实现提醒iOS描述文件有效期]()，这篇文章介绍一下使用SwiftUI通过Mac APP实现提醒描述文件有效期。
+之前有写过使用[Python实现提醒iOS描述文件有效期](https://morganwang.cn/2024/04/19/Mac扫描iOS描述文件/#more)，这篇文章介绍一下使用SwiftUI通过Mac APP实现提醒描述文件有效期。
 
 <!--more-->
 
